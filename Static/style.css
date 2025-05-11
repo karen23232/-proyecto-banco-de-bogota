@@ -1,0 +1,127 @@
+/* Fondo general y fuente */ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor centrado (cuadro morado claro) */
+.container {
+    width: 420px;
+    background-color: #f3e6f8; /* morado claro */
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+    box-sizing: border-box;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #8d639c;
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-bottom: 2px solid #d6b8e2;
+    padding-bottom: 10px;
+}
+
+/* Formularios */
+form,
+#practicantesList {
+    width: 100%;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #7d508a;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="file"] {
+    margin-bottom: 16px;
+    padding: 8px 10px;
+    width: 100%;
+    border: 1px solid #b892c7;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Foco en inputs */
+input:focus {
+    border-color: #c77bd9;
+    outline: none;
+    box-shadow: 0 0 4px rgba(199, 123, 217, 0.3);
+}
+
+/* Botón */
+button {
+    padding: 10px 18px;
+    width: 100%;
+    background: linear-gradient(135deg, #a569bd, #8e44ad);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #9b59b6, #7e3ea1);
+    transform: translateY(-1px);
+}
+
+/* Tabla de practicantes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 13.5px;
+}
+
+th {
+    background-color: #f1f3f5;
+    font-weight: 600;
+    color: #9071e3;
+}
+
+tr:hover {
+    background-color: #f9fafc;
+}
+
+/* Sección detalle */
+#detallePract {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #4280bd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
